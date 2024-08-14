@@ -1,0 +1,23 @@
+{
+    "name": "persgeek/algos",
+    "description": "Algos",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PG\\Algos\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Saeed Johari",
+            "email": "persgeek@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.3"
+    }
+}
