@@ -16,7 +16,11 @@ class Cipher
 
             $position = strpos($chars, $value[$i]);
 
-            $result[] = $reversed[$position];
+            if ($position !== false) {
+                $result[] = $reversed[$position];
+            } else {
+                $result[] = $value[$i];
+            }
         }
 
         return implode($result);

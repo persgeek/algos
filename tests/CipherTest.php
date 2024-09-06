@@ -7,15 +7,15 @@ class CipherTest extends TestCase
 {
     public function testEncryptAtbash()
     {
-        $value = Cipher::atbash('SAEED');
+        $value = Cipher::atbash('SaEED');
 
-        $this->assertSame($value, 'HZVVW');
+        $this->assertSame($value, 'HaVVW');
     }
 
     public function testDecryptAtbash()
     {
-        $value = Cipher::atbash('HZVVW');
+        $value = Cipher::atbash('HaVVW');
 
-        $this->assertSame($value, 'SAEED');
+        $this->assertSame($value, 'SaEED');
     }
 }
